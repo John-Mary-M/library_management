@@ -245,3 +245,9 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+# signup manual enable
+website_route_rules = [
+    {"from_route": "/login", "to_route": "login"}
+]

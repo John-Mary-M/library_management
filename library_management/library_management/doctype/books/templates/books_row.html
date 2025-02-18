@@ -1,0 +1,26 @@
+
+
+<div class="py-8 row">
+	<div class="col-sm-1">
+		<img src="{{ doc.image }}" alt="{{ doc.name }}">
+	</div>
+
+	<div class="col">
+		<a class="fron-size-lg" href="/{{ doc.route }}"> {{ doc.name }}</a> <!--Book name as a link to the description-->
+		<p class="text-muted">By {{ doc.author }}</p> <!--Author Name-->
+		<p class="text-muted">ISBN {{ doc.isnb }}</p> <!--ISBN-->
+		
+		<!--Making sure issue books doesnt exceed copies availble in the library-->
+		{% if doc.available_copies > 0 and doc.available_copies <= doc.total_number_of_copies %}
+			<p class="badge bg-success" style="color: white;" >Status: {{ doc.status }} </p>
+			<p>Available copies: {{ doc.available_copies }}</p>
+		{% else %}
+			<p class="badge bg-danger" style="color: white;">Status: {{ doc.status }} </p>
+		{%endif%}
+
+		
+	</div>
+
+	
+
+</div>

@@ -1,0 +1,113 @@
+{
+ "app": "frappe",
+ "charts": [],
+ "content": "[{\"id\":\"wCLacZdFbA\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Library</span>\",\"col\":12}},{\"id\":\"C7rZu0HbPT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Library Member\",\"col\":3}},{\"id\":\"9DrmlHqV44\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Books\",\"col\":3}},{\"id\":\"9IpHRD79A2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Library Transactions\",\"col\":3}},{\"id\":\"cXLUwg0pQD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Loaned Books\",\"col\":3}},{\"id\":\"XPpuqHBYAW\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ZgJELf-X2f\",\"type\":\"card\",\"data\":{\"card_name\":\"Transactions\",\"col\":4}},{\"id\":\"ds0abIuTnD\",\"type\":\"card\",\"data\":{\"card_name\":\"List\",\"col\":4}}]",
+ "creation": "2025-02-11 23:37:39.985184",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "solid-success",
+ "idx": 0,
+ "indicator_color": "orange",
+ "is_hidden": 0,
+ "label": "Library",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transactions",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Transaction",
+   "link_count": 0,
+   "link_to": "Library Transaction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "List",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Books",
+   "link_count": 0,
+   "link_to": "Books",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Member",
+   "link_count": 0,
+   "link_to": "Library Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-02-18 11:28:37.035252",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Library Member",
+   "link_to": "Library Member",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Loaned Books",
+   "link_to": "Tracking Loaned Books",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Library Transactions",
+   "link_to": "Library Transaction",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Books",
+   "link_to": "Books",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Library",
+ "type": "Workspace"
+}

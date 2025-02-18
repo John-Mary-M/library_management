@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="csrf-token" content="{{ frappe.csrf_token }}">
+  <title>Login</title>
+ 
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f4; font-family: Arial, sans-serif;">
+
+  <div class="login-container" style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 300px; text-align: center">
+
+    <h2 style="margin-bottom: 20px; color: #333;">Login</h2>
+
+    <form id="login-form" method="POST" action="/api/method/library_management.api.login">
+         <!--CSRF token as a hidden field -->
+        <input type="hidden" name="_csrf_token" value="{{ frappe.csrf_token }}">
+        <!--Username field-->
+      <div>
+        <label for="usr">Username</label>
+        <input type="text" id="usr" name="usr" required style="width: 90%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      <!--password field-->
+      <div>
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd" required style="width: 90%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      <!--submit button-->
+      <button type="submit" style="width: 100%; padding: 10px; margin-top: 10px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Login</button>
+    </form>
+    <!-- Area to show error messages -->
+    <div id="login-error" style="color: red; margin-top: 10px;"></div>
+  </div>
+
+  <script src="/library_management/js/login.js"></script>
+
+</body>
+</html>
